@@ -1,0 +1,56 @@
+.aboutMe-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: rgb(20, 29, 47);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.graphic-area {
+    position: absolute;
+    bottom: -320px;
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.aboutMe-graphic {
+    width: 105%;
+    z-index: 1;
+    position: absolute;
+}
+
+.aboutMe-shadow {
+    position: absolute;
+    right: 0;
+    bottom: -40px;;
+}
+
+.aboutMe-content {
+    padding-left: 5%;
+    padding-bottom: 200px;
+    max-width: 500px;
+}
+
+.content-header {
+    font-size: 86px;
+    color: white;
+    font-family: 'poppins-bold'
+}
+
+.content-text {
+    color: white;
+}
+
+.personal-infos {
+    margin-top: 40px;
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    span {
+        color: white;
+    }
+}

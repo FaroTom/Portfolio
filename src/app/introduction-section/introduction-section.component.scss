@@ -1,0 +1,120 @@
+.introduction-section {
+    width: 100%;
+    background-color: rgb(20, 29, 47);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.purple-shadow {
+    position: absolute;
+    top: 90px;
+    left: -250px;
+    opacity: 0.95;
+}
+
+.green-shadow {
+    position: absolute;
+    top: -20px;
+    right: -490px;
+    opacity: 0.9;
+}
+
+.introduction-content {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.align-introduction {
+    display: flex;
+    align-items: center;
+}
+
+.introduction-text {
+    display: flex;
+    flex-direction: column;
+    gap: -20px;
+}
+
+.name {
+    font-size: 118px;
+    color: white;
+    font-weight: 700 !important;
+    font-family: 'poppins-bold' !important;
+    margin: 0;
+    height: 160px;
+}
+
+.vocation {
+    font-size: 64px;
+    color: rgb(76, 79, 216);
+    margin: 0px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.rotated-text {
+    rotate: 270deg;
+    font-size: 90px;
+    color: white;
+}
+
+.letsTalk-button {
+    background-color: rgb(0, 190, 232);
+    padding: 16px;
+    width: 150px;
+    border-radius: 12px;
+    color: white;
+    font-size: 22px;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(75, 71, 255);
+        scale: 1.1;
+    }
+}
+
+.scrollDown {
+    color: white;
+    rotate: 90deg;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 20px;
+    position: absolute;
+    right: 4%;
+
+    img {
+        rotate: 90deg;
+    }
+}
+
+.place-network-icons {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+    img {
+        margin-left: 36px;
+        &:hover {
+            cursor: pointer;
+            scale: 1.2;
+        }
+    }
+}
+
+.blue-stroke {
+    height: 4px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(0, 190, 232);
+}

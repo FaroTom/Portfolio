@@ -1,0 +1,37 @@
+.header {
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 100px;
+    background-color: rgb(20, 29, 47);
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 18px;
+    z-index: 1000;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.header-selection {
+    a {
+        margin-left: 28px;
+        &:hover {
+            cursor: pointer;
+            color: rgb(28, 218, 230);
+        }
+    }
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+    }
+}
