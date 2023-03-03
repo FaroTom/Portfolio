@@ -1,9 +1,9 @@
 .skills-section {
     position: relative;
-    height: 80vh;
-    width: 100%;
+    max-width: 100%;
     background-color: rgb(20, 29, 47);
-    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .single-column {
@@ -16,13 +16,25 @@
     }
 }
 
+.place-shadow {
+    position:absolute;
+    right: 0;
+    bottom: -400px;
+    background-image: url('/assets/img/green-shadow.png');
+    height: 750px;
+    width: 450px;
+    background-size: cover;
+    z-index: 200;
+}
+
 .place-icons {
-    position: absolute;
     gap: 110px;
     display: flex;
     flex-direction: row;
     padding-left: 5%;
-    padding-top: 40px;
+    height: 65vh;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 .icon-container {
@@ -35,11 +47,7 @@
 }
 
 .skills-headline {
-    position: absolute;
-    z-index: 500;
-    right: 0;
     gap: 40px;
-    top: 20%;
     display: flex;
     align-items: center;
 
@@ -58,10 +66,6 @@
 }
 
 .skills-text {
-    position: absolute;
-    z-index: 500;
-    top: 37.5%;
-    right: 5%;
     width: 480px;
 
     span {
@@ -69,14 +73,20 @@
     }
 }
 
-.contact-button {
+.skills-content {
     position: absolute;
     z-index: 500;
-    top: 50%;
-    right: 23.5%;
+    display: flex;
+    right: 0;
+    top: 17%;
+    gap: 36px;
+    flex-direction: column;
+}
+
+.contact-button {
     background-color: rgb(0, 190, 232);
     padding: 16px;
-    width: 180px;
+    width: 200px;
     border-radius: 10px;
     color: white;
     font-size: 22px;
