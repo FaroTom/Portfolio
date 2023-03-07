@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-skills-section',
-  templateUrl: './skills-section.component.html',
-  styleUrls: ['./skills-section.component.scss']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
-export class SkillsSectionComponent {
+export class FooterComponent {
+
+  redirectTo(location:any) {
+    window.open(location, "_blank")
+  }
 
   toLocation(location: any) {
     var scrollSection = document.getElementById(location)?.offsetTop;

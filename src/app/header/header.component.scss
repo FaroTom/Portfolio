@@ -35,3 +35,10 @@
         cursor: pointer;
     }
 }
+
+.highlight {
+    border-bottom: 3px solid rgb(75, 71, 255);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: rgb(28, 218, 230) !important;
+}

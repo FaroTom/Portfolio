@@ -11,15 +11,15 @@
             </div>
         </div>
 
-        <button class="letsTalk-button">Let´s talk!</button>
+        <button class="letsTalk-button" (click)="toLocation('contact-section')">Let´s talk!</button>
     </div>
 
     <div class="scrollDown"> Scroll down <img src="/assets/img/arrow.png"> </div>
 
     <div class="place-network-icons">
         <div class="blue-stroke"></div>
-        <a href="https://github.com/FaroTom"> <img src="assets/img/github-icon.png"> </a> 
-        <a href=""> <img src="assets/img/mail-icon.png"> </a> 
-        <a href="https://www.linkedin.com/in/tom-krause-882709233/"> <img src="assets/img/linkedIn-icon.png"> </a> 
+        <img (click)="redirectTo('https://github.com/FaroTom')" src="assets/img/github-icon.png">
+        <img (click)="toLocation('contact-section')" src="assets/img/mail-icon.png"> 
+        <img (click)="redirectTo('https://www.linkedin.com/in/tom-krause-882709233/')" src="assets/img/linkedIn-icon.png">
     </div>
 </div>

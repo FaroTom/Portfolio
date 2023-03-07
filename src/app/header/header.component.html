@@ -1,11 +1,11 @@
 <div class="header">
     <div class="header-title">
-        <a href="">&lt; Tom &gt;</a>
+        <a (click)="toLocation('introduction-section')">&lt; Tom &gt;</a>
     </div>
 
     <div class="header-selection">
-        <a routerLink="/about-me-section">About me</a>
-        <a href="">Skills</a>
-        <a href="">Portfolio</a>
+        <a id="about-me" (click)="highlightLink('about-me'); toLocation('about-me-section')">About me</a>
+        <a id="skills" (click)="highlightLink('skills'); toLocation('skills-section')" >Skills</a>
+        <a id="portfolio" (click)="highlightLink('portfolio'); toLocation('portfolio-section')" >Portfolio</a>
     </div>
 </div>

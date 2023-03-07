@@ -1,0 +1,159 @@
+.contact-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: rgb(20, 29, 47);
+    padding-top: 20%;
+    padding-bottom: 12%;
+    overflow: hidden;
+}
+
+.contact-headline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 5%;
+    gap: 30px;
+    width: 100%;
+
+    span {
+        font-family: 'poppins-bold';
+        font-size: 84px;
+        color: white;
+    }
+}
+
+.blue-stroke {
+    width: 35%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: rgb(0, 190, 232);
+}
+
+.contact-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-leftside {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    color: white;
+    width: 33%;
+
+    h1 {
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+
+    span {
+        color: whitesmoke;
+        margin-bottom: 3%;
+    }
+}
+
+.content-rightside {
+    padding-right: 5%;
+    width: 40%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-bottom: 20px;
+            background-color: rgb(20, 29, 47);
+            border: 1px solid rgb(75, 71, 255);
+            height: 1.75rem;
+            border-radius: 10px;
+            padding: 14px;
+            color: white;
+
+            &:hover {
+                border: 1px solid rgb(28, 230, 181);
+                cursor: pointer;
+            }
+
+            &:focus {
+                border: 1px solid rgb(75, 71, 255);
+            }
+        }
+    }
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    font-size: 14px;
+    /* Firefox */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.place-message {
+    background-color: rgb(20, 29, 47);
+    border: 1px solid rgb(75, 71, 255);
+    border-radius: 10px;
+    height: 12rem;
+    padding: 14px;
+    margin-bottom: 20px;
+    color: white;
+    z-index: 2;
+    resize: none;
+
+    &:hover {
+        border: 1px solid rgb(28, 230, 181);
+        cursor: pointer;
+    }
+}
+
+.send-button {
+    background-color: rgb(0, 190, 232);
+    padding: 16px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    border: none;
+    z-index: 2;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(75, 71, 255);
+        scale: 1.1;
+    }
+}
+
+.go-up-button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+    height: 39px;
+    width: 39px;
+    background-image: url('/assets/img/go-up-button.png');
+
+    &:hover {
+        cursor: pointer;
+        background-image: url('/assets/img/go-up-buttonv2.png');
+    }
+}
+
+.purple-shadow {
+    position: absolute;
+    right: -260px;
+    bottom: -920px;
+}

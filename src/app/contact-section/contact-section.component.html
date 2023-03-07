@@ -1,0 +1,27 @@
+<div class="contact-section">
+    <div class="contact-headline">
+        <span>Contact</span>
+        <div class="blue-stroke"></div>
+    </div>
+
+    <div class="contact-content">
+        <div class="content-leftside">
+            <h1>Got a problem to solve?</h1>
+            <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
+                to your projects with my work.</span>
+            <span>Need a Frontend developer? <b>Contact me!</b></span>
+        </div>
+
+        <div class="content-rightside">
+            <form (submit)="sendMail()" ngNativeValidate>
+                <input required type="text" name="name" placeholder="Your name" #nameField>
+                <input required type="email" name="email" placeholder="Your email" #emailField>
+                <textarea required class="place-message" placeholder="Your message" #messageField></textarea>
+                <div class="button-container"> <button class="send-button" #sendButton>Send message</button> </div>
+            </form>
+        </div>
+    </div>
+
+    <div (click)="toLocation('introduction-section')" class="go-up-button"> </div>
+    <img class="purple-shadow" src="/assets/img/purple-shadow-contact.png">
+</div>

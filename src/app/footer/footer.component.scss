@@ -1,0 +1,48 @@
+.footer-container {
+    background-color: rgb(20, 29, 47);
+    height: 30vh;
+    border-top: 4px solid rgb(0, 190, 232);
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.content-leftside {
+    color: white;
+
+    span {
+        font-size: 46px;
+        cursor: pointer;
+    }
+
+    a{
+        &:hover {
+            color: rgb(28, 218, 230);
+            cursor: pointer;
+        }
+    }
+}
+
+.content-middle {
+    color: white;
+    font-size: 22px;
+}
+
+.content-rightside {
+    img {
+        margin-left: 36px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+}
