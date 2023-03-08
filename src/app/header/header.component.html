@@ -1,6 +1,6 @@
 <div class="header">
     <div class="header-title">
-        <a (click)="toLocation('introduction-section')">&lt; Tom &gt;</a>
+        <a (click)="toLocation('introduction-section'); backToMainPage()">&lt; To<span>m</span> &gt;</a>
     </div>
 
     <div class="header-selection">
@@ -8,4 +8,6 @@
         <a id="skills" (click)="highlightLink('skills'); toLocation('skills-section')" >Skills</a>
         <a id="portfolio" (click)="highlightLink('portfolio'); toLocation('portfolio-section')" >Portfolio</a>
     </div>
+
+    <img class="menu-img" src="/assets/img/menu.png">
 </div>

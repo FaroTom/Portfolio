@@ -26,13 +26,20 @@
             color: rgb(28, 218, 230);
         }
     }
+    @media (max-width: 650px) {
+        display: none;
+    }
 }
 
 .header-title {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     &:hover {
         cursor: pointer;
+    }
+
+    span {
+        color: rgb(28, 218, 230);
     }
 }
 
@@ -41,4 +48,12 @@
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     color: rgb(28, 218, 230) !important;
+}
+
+.menu-img {
+    display: none;
+    @media (max-width: 650px) {
+        display:block;
+        cursor: pointer;
+    }
 }

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class PortfolioSectionComponent {
 
+  
+  redirectTo(location:any) {
+    window.open(location, "_blank")
+  }
 }

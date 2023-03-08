@@ -3,7 +3,7 @@
         <div class="purple-stroke"></div> <span>Portfolio</span>
     </div>
     <div class="portfolio-text">
-        This page is a sample of my work! scroll down to view other projects I have developed.
+        This page is a sample of my work! Please feel free to try them out.
     </div>
 
     <div class="place-projects">
@@ -11,8 +11,8 @@
             <div class="image-container">
                 <img src="/assets/img/pollo-loco.png">
                 <div class="project-overlay">
-                    <div class="overlay-buttons-area"> <button class="github-button">Github</button> <button
-                            class="liveTest-button">Live test</button> </div>
+                    <div class="overlay-buttons-area"> <button (click)="redirectTo('https://github.com/FaroTom/El-Pollo-Loco---Minigame')" class="github-button">Github</button> 
+                        <button class="liveTest-button">Live test</button> </div>
                     <div class="overlay-text-area">
                         <span class="text-area-headline">El Pollo Loco</span>
                         <span>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and
@@ -25,15 +25,18 @@
             <div class="image-container">
                 <img src="/assets/img/join.png">
                 <div class="project-overlay">
-                    <div class="overlay-buttons-area"> <button class="github-button">Github</button> <button
+                    <div class="overlay-buttons-area"> <button (click)="redirectTo('https://github.com/FaroTom/Join---Kanban-Board')" class="github-button">Github</button> <button
                             class="liveTest-button">Live test</button> </div>
                     <div class="overlay-text-area">
                         <span class="text-area-headline">Join</span>
-                        <span>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories</span>
+                        <span>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop
+                            functions, assign users and categories</span>
                         <span class="text-area-subtext"> JavaScript | HTML | CSS </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <img class="blue-shadow" src="/assets/img/blue-shadow.png">
 </div>

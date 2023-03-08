@@ -12,3 +12,19 @@ body {
     font-family: 'poppins-bold';
     src: url('/assets/fonts/Poppins-Bold.ttf');
   }
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #eff1f5;
+  }
+
+::-webkit-scrollbar-thumb{
+    border-radius:12px;
+    background-color:#515769;
+    border:2px solid #eff1f5
+  }
+
+::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background-color: transparent;
+  }

@@ -1,7 +1,8 @@
 <app-header></app-header>
-<app-introduction-section id="introduction-section"></app-introduction-section>
-<app-about-me-section id="about-me-section"></app-about-me-section>
-<app-skills-section id="skills-section"></app-skills-section>
-<app-portfolio-section id="portfolio-section"></app-portfolio-section>
-<app-contact-section id="contact-section"></app-contact-section>
-<app-footer></app-footer>
+<app-introduction-section *ngIf="mainPage" id="introduction-section"></app-introduction-section>
+<app-about-me-section *ngIf="mainPage" id="about-me-section"></app-about-me-section>
+<app-skills-section *ngIf="mainPage" id="skills-section"></app-skills-section>
+<app-portfolio-section *ngIf="mainPage" id="portfolio-section"></app-portfolio-section>
+<app-contact-section *ngIf="mainPage" id="contact-section"></app-contact-section>
+<app-imprint *ngIf="imprint"></app-imprint>
+<app-footer *ngIf="mainPage"></app-footer>

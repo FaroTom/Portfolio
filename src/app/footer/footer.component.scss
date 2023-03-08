@@ -1,6 +1,6 @@
 .footer-container {
     background-color: rgb(20, 29, 47);
-    height: 30vh;
+    height: 26vh;
     border-top: 4px solid rgb(0, 190, 232);
     display: flex;
     align-items: center;
@@ -18,12 +18,17 @@
 .content-leftside {
     color: white;
 
-    span {
-        font-size: 46px;
+    .footer-logo {
+        font-size: 40px;
         cursor: pointer;
+        font-weight: bold;
     }
 
-    a{
+    span {
+        color: rgb(28, 218, 230);
+    }
+
+    .imprint{
         &:hover {
             color: rgb(28, 218, 230);
             cursor: pointer;

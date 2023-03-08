@@ -13,10 +13,17 @@
         </div>
 
         <div class="content-rightside">
-            <form (submit)="sendMail()" ngNativeValidate>
-                <input required type="text" name="name" placeholder="Your name" #nameField>
-                <input required type="email" name="email" placeholder="Your email" #emailField>
-                <textarea required class="place-message" placeholder="Your message" #messageField></textarea>
+            <form autocomplete="off" (submit)="sendMail()" ngNativeValidate>
+                <input required maxlength="40" type="text" name="name" (keyup)="updateDesignNameInput()"
+                    (focus)="updateDesignNameInput()" (focusout)="resetDesignNameInput()" [(ngModel)]="name"
+                    placeholder="Your name" #nameField>
+                <input required maxlength="50" type="email" name="email" (keyup)="updateDesignEmailInput()"
+                    (focus)="updateDesignEmailInput()" (focusout)="resetDesignEmailInput()" [(ngModel)]="email"
+                    placeholder="Your email" #emailField>
+                <textarea required maxlength="1050" class="place-message" name="message"
+                    (keyup)="updateDesignMessageInput()" (focus)="updateDesignMessageInput()"
+                    (focusout)="resetDesignMessageInput()" [(ngModel)]="message" placeholder="Your message"
+                    #messageField></textarea>
                 <div class="button-container"> <button class="send-button" #sendButton>Send message</button> </div>
             </form>
         </div>
@@ -24,4 +31,28 @@
 
     <div (click)="toLocation('introduction-section')" class="go-up-button"> </div>
     <img class="purple-shadow" src="/assets/img/purple-shadow-contact.png">
+
+    <div *ngIf="showAlertEmail" class="space-mail-alert">
+        <div class="mailSentAlert">
+            <span>Email was successfully sent.</span> 
+          </div>
+    </div>
+    
+
+    <div *ngIf="showLoadingAnimation" class="container">
+        <div class="row">
+            <div id="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="loading"></div>
+            </div>
+        </div>
+    </div>
+
 </div>

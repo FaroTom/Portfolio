@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+constructor(private appComponent: AppComponent) {
+
+}
 
 highlightLink(id: any) {
   this.resetHighlight()
@@ -32,5 +36,13 @@ toLocation(location: any) {
   var scrollSection = document.getElementById(location)?.offsetTop;
   var goal = scrollSection! - 100;
   window.scrollTo({ top: goal, behavior: 'smooth'});
+}
+
+/* On imprint page - clicking on logo redirects back to main page **/
+backToMainPage() {
+  if(this.appComponent.mainPage == false) {
+    this.appComponent.imprint = false;
+    this.appComponent.mainPage = true;
+  }
 }
 }
