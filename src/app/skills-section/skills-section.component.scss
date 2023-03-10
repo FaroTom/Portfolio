@@ -98,3 +98,48 @@
         scale: 1.1;
     }
 }
+
+@media (max-width: 1350px) {
+    .place-icons {
+        gap: 70px;
+    }
+    .skills-headline {
+        span {
+            font-size: 68px;
+        }
+    }
+}
+
+@media (max-width: 1175px) {
+    .skills-content {
+        position: unset;
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills-section {
+        flex-direction: column-reverse;
+        height: 110vh;
+        justify-content: center;
+    }
+
+    .skills-headline {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+    }
+
+    .blue-stroke {
+        position: absolute;
+        right: 0;
+        width: 35%;
+    }
+    .contact-button {
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .place-shadow {
+        bottom: -660px;
+    }
+}

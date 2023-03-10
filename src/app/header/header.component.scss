@@ -41,6 +41,10 @@
     span {
         color: rgb(28, 218, 230);
     }
+
+    @media(max-width: 550px) {
+        font-size: 36px;
+    }
 }
 
 .highlight {

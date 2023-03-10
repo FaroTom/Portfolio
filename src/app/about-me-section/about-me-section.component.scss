@@ -54,3 +54,69 @@
         color: white;
     }
 }
+
+@media (max-width: 1400px) {
+    .aboutMe-shadow {
+        width: 750px;
+    }
+
+    .content-header {
+        font-size: 78px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .aboutMe-shadow {
+        width: 680px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .aboutMe-shadow {
+        position: unset;
+    }
+    .aboutMe-section {
+        flex-direction: column-reverse;
+    }
+    .graphic-area {
+        bottom: unset;
+        top: 360px;
+    }
+    .aboutMe-content {
+        z-index: 3;
+        padding-bottom: 12%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 675px) {
+    .content-header {
+        font-size: 54px;
+    }
+    .personal-infos {
+        font-size: 14px;
+    }
+    .graphic-area {
+        height: 400px;
+        top: 420px;
+    }
+    .content-text {
+        font-size: 14px;
+    }
+    .aboutMe-shadow {
+        padding-top: 8%;
+        width: 640px;
+    }
+    .aboutMe-section {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 475px) {
+    .content-header {
+        font-size: 48px;
+    }
+}

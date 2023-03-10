@@ -10,4 +10,5 @@ export class AppComponent {
 
   mainPage = true;
   imprint = false;
+  mobileMenu = false;
 }

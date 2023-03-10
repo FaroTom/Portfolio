@@ -11,6 +11,11 @@
     top: 90px;
     left: -250px;
     opacity: 0.95;
+
+    @media(max-width: 1100px) {
+        top: 1rem;
+        left: -300px;
+    }
 }
 
 .green-shadow {
@@ -18,17 +23,24 @@
     top: -20px;
     right: -490px;
     opacity: 0.9;
+
+    @media(max-width: 1100px) {
+        top: 12rem;
+        right: -540px;
+    }
 }
 
 .introduction-content {
     height: 80%;
-    width: 100%;
+    width: 90%;
     display: flex;
     margin-top: 40px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .align-introduction {
@@ -39,7 +51,7 @@
 .introduction-text {
     display: flex;
     flex-direction: column;
-    gap: -20px;
+    z-index: 100;
 }
 
 .name {
@@ -69,11 +81,12 @@
 .letsTalk-button {
     background-color: rgb(0, 190, 232);
     padding: 16px;
-    width: 150px;
+    width: 160px;
     border-radius: 12px;
     color: white;
     font-size: 22px;
     border: none;
+    z-index: 1000;
 
     &:hover {
         cursor: pointer;
@@ -117,4 +130,99 @@
     width: 100px;
     border-radius: 10px;
     background-color: rgb(0, 190, 232);
+}
+
+@media (max-width: 1100px) {
+    .name {
+        height: auto;
+        font-size: 94px;
+    }
+
+    .vocation {
+        font-size: 48px;
+    }
+
+    .rotated-text {
+        font-size: 76px;
+    }
+}
+
+@media (max-width: 875px) {
+    .name {
+        font-size: 72px;
+    }
+
+    .vocation {
+        font-size: 42px;
+    }
+
+    .rotated-text {
+        font-size: 60px;
+    }
+
+    .green-shadow {
+        height: 600px;
+        right: -420px;
+    }
+
+    .purple-shadow {
+        height: 500px;
+        left: -240px;
+        top: 6.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .name {
+        font-size: 56px;
+    }
+    .vocation {
+        font-size: 34px;
+    }
+    .rotated-text {
+        font-size: 50px;
+    }
+    .letsTalk-button {
+        font-size: 18px;
+        padding: 14px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 550px) {
+    .name {
+        font-size: 40px;
+    }
+    .vocation {
+        font-size: 24px;
+    }
+    .rotated-text {
+        font-size: 32px;
+    }
+    .introduction-content {
+        padding-left: 0;
+        padding-top: 5%;
+        padding-right: 0;
+        width: 100%;
+    }
+    .place-network-icons {
+        margin: 0;
+    }
+    .scrollDown {
+        display: none;
+    }
+    .green-shadow {
+        right: -440px;
+        top: 320px;
+    }
+
+    .purple-shadow {
+        left: -270px;
+        top: 6.5rem;
+    }
+
+    .align-introduction {
+        width: 340px;
+        padding-right: 5%;
+    }
 }
