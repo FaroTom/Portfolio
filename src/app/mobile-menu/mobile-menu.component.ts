@@ -14,8 +14,13 @@ export class MobileMenuComponent {
 
   toLocation(location: any) {
     this.appComponent.mobileMenu = false;
-    this.appComponent.mainPage = true;
-
+    if(this.appComponent.imprint == true) {
+      this.appComponent.imprint = false;
+      this.appComponent.mainPage = true;
+    } else {
+      this.appComponent.mainPage = true;
+    }
+    
     setTimeout(() => {
       var scrollSection = document.getElementById(location)?.offsetTop;
       var goal = scrollSection! - 100;

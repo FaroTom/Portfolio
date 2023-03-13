@@ -33,9 +33,19 @@ export class HeaderComponent {
   }
 
   toLocation(location: any) {
-    var scrollSection = document.getElementById(location)?.offsetTop;
-    var goal = scrollSection! - 100;
-    window.scrollTo({ top: goal, behavior: 'smooth' });
+    if (this.appComponent.imprint == true) {
+      this.appComponent.imprint = false;
+      this.appComponent.mainPage = true;
+      setTimeout(() => {
+        var scrollSection = document.getElementById(location)?.offsetTop;
+        var goal = scrollSection! - 100;
+        window.scrollTo({ top: goal, behavior: 'smooth' });
+      })
+    } else {
+      var scrollSection = document.getElementById(location)?.offsetTop;
+      var goal = scrollSection! - 100;
+      window.scrollTo({ top: goal, behavior: 'smooth' });
+    }
   }
 
   /* On imprint page - clicking on logo redirects back to main page **/
@@ -45,7 +55,7 @@ export class HeaderComponent {
       this.appComponent.mainPage = true;
     }
 
-    if(this.appComponent.mobileMenu == true) {
+    if (this.appComponent.mobileMenu == true) {
       this.appComponent.mobileMenu = false;
       this.appComponent.mainPage = true;
     }
@@ -56,6 +66,9 @@ export class HeaderComponent {
       this.appComponent.mobileMenu = true;
       this.appComponent.mainPage = false;
     } else {
+      if(this.appComponent.imprint == true) {
+        this.appComponent.imprint = false;
+      }
       this.appComponent.mobileMenu = false;
       this.appComponent.mainPage = true;
     }
