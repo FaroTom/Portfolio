@@ -37,19 +37,19 @@
 }
 
 .place-projects {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
     padding-top: 16%;
     padding-bottom: 5%;
     gap: 5rem;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .single-row {
-    width: 100%;
-    height: 603px;
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -59,30 +59,33 @@
     from {}
 
     to {
-        transform: scale(1.6);
+        transform: scale(1.95);
     }
 }
 
 .image-container {
     overflow: hidden;
     position: relative;
-    width: 603px;
-    height: 603px;
-    border-radius: 16px;
-    border: 1px solid rgb(0, 190, 232);
     z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1.8px solid rgb(0, 190, 232);
+
+    img {
+        min-height: 97%;
+        min-width: 97%;
+        border-radius: 16px;
+    }
 
     &:hover {
-        img {
-            animation: zoom-in 0.2s forwards;
-            cursor: pointer;
-            position: absolute;
-            top: -55px;
-            right: -5px;
-        }
-
         .project-overlay {
             display: flex;
+        }
+        img {
+            animation: zoom-in 0.3s forwards;
+            top: -30px;
         }
     }
 }
@@ -95,6 +98,7 @@
     display: none;
     position: absolute;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .overlay-buttons-area {
@@ -178,4 +182,150 @@
     bottom: -300px;
     left: -580px;
     z-index: 100;
+}
+
+@media (max-width: 1400px) {
+    .portfolio-text {
+        top: 9%;
+    }
+    .place-projects {
+        padding-top: 20%;
+    }
+}
+@media (max-width: 1350px) {
+    .portfolio-headline {
+        span {
+            font-size: 68px;
+        }
+    }
+}
+
+@media (max-width: 1175px) {
+    .portfolio-text {
+        position: unset;
+    }
+    .portfolio-headline {
+        position: unset;
+    }
+    .portfolio-section {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .place-projects {
+        padding-top: 8%;
+    }
+    .overlay-text-area {
+        font-size: 18px;
+    }
+    .text-area-headline {
+        font-size: 24px;
+    }
+    .blue-shadow {
+        bottom: -230px;
+        left: -650px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .overlay-text-area {
+        font-size: 16px
+    }
+    .text-area-headline {
+        font-size: 22px;
+    }
+    .github-button {
+        font-size: 18px;
+    }
+    .liveTest-button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 875px) {
+    .overlay-text-area {
+        gap:unset;
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 96%;
+    }
+    .github-button {
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .liveTest-button {
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay-buttons-area {
+        height: 35%;
+    }
+    .overlay-text-area {
+        height: 65%;
+    }
+    .single-row {
+        gap: 3rem;
+    }
+    .place-projects {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .single-row {
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
+    }
+    .overlay-text-area {
+        gap: 2rem;
+    }
+    .image-container {
+        img {
+            min-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 675px) {
+    .portfolio-headline {
+       span {
+        font-size: 50px;
+       } 
+    }
+    .portfolio-text {
+        font-size: 14px;
+        width: 90%;
+        padding-right: 5%;
+        z-index: 999;
+    }
+    .overlay-text-area {
+        gap: 1.3rem;
+    }
+    .text-area-headline {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 475px) {
+    .overlay-text-area {
+        gap: 0.4rem;
+    }
+    .portfolio-headline {
+        span {
+            font-size: 46px;
+        }
+    }
+    .single-row {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
 }

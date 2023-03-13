@@ -142,4 +142,72 @@
     .place-shadow {
         bottom: -660px;
     }
+
+    .place-icons {
+        width: 90%;
+        padding-right: 5%;
+        justify-content: space-between;
+        gap:unset;
+    }
+}
+
+@media (max-width: 950px) {
+    .place-shadow {
+        width: 270px;
+    }
+}
+
+@media (max-width: 675px) {
+    .skills-headline {
+        span {
+            font-size: 50px;
+        }
+    }
+    .contact-button {
+        width: 140px;
+        font-size: 18px;
+        padding: 14px;
+        bottom: 8%;
+    }
+    .skills-text {
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+        width: 90%;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+    }
+    .icon-container {
+        span {
+            font-size: 14px;
+        }
+
+        img {
+            width: 52px;
+            height: 52px;
+        }
+    }
+    .blue-stroke {
+        width: 30%;
+    }
+    .place-shadow {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475px) {
+    .icon-container {
+        img {
+            width: 42px;
+            height: 42px;
+        }
+    }
+    .skills-headline {
+        span {
+            font-size: 46px;
+        }
+    }
+    .blue-stroke {
+        width: 26%;
+    }
 }
