@@ -226,3 +226,15 @@
         padding-right: 5%;
     }
 }
+
+@media (max-height: 900px) {
+    .green-shadow {
+        top: 200px;
+    }
+}
+
+@media (max-height: 775px) {
+    .green-shadow {
+        top: 0;
+    }
+}

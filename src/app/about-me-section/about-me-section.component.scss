@@ -18,13 +18,13 @@
 
 .aboutMe-graphic {
     width: 105%;
-    z-index: 1;
+    z-index: 3;
     position: absolute;
 }
 
 .aboutMe-shadow {
     position: absolute;
-    right: 0;
+    right: 1%;
     bottom: -40px;;
 }
 
@@ -55,9 +55,27 @@
     }
 }
 
+.place-picture {
+    object-fit: cover;
+    width: 600px;
+    height: 1067px;
+}
+
+.portfolio-picture {
+    width: 600px;
+    position: absolute;
+    right: 7%;
+    z-index: 2;
+}
+
 @media (max-width: 1350px) {
     .aboutMe-shadow {
-        width: 750px;
+        width: 800px;
+        right: 0;
+    }
+
+    .portfolio-picture {
+        right: 4%;
     }
 
     .content-header {
@@ -67,7 +85,12 @@
 
 @media (max-width: 1275px) {
     .aboutMe-shadow {
-        width: 680px;
+        width: 700px;
+    }
+
+    .portfolio-picture {
+        width: 514px;
+        bottom: 6%;
     }
 }
 
@@ -83,12 +106,32 @@
         top: 360px;
     }
     .aboutMe-content {
-        z-index: 3;
+        z-index: 4;
         padding-bottom: 12%;
         padding-left: 5%;
         padding-right: 5%;
         width: 90%;
         max-width: none;
+    }
+    .place-picture {
+        position: relative;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 1050px) {
+    .portfolio-picture {
+        bottom: 11%;
+    }
+}
+
+@media (max-width: 900px) {
+    .portfolio-picture {
+        width: 460px;
+        height: auto;
+        right: 12%;
+        bottom: 16%;
     }
 }
 
@@ -113,10 +156,29 @@
     .aboutMe-section {
         overflow: hidden;
     }
+    .portfolio-picture {
+        bottom: 8%;
+    }
+}
+
+@media (max-width: 550px) {
+    .portfolio-picture {
+        width: 400px;
+        right: 15%;
+        bottom: 15%;
+    }
 }
 
 @media (max-width: 475px) {
     .content-header {
         font-size: 46px;
+    }
+    .portfolio-picture {
+        width: 370px;
+        right: 17%;
+        bottom: 10%;
+    }
+    .aboutMe-shadow {
+        width: 580px;
     }
 }
