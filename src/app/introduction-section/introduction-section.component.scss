@@ -227,14 +227,19 @@
     }
 }
 
-@media (max-height: 900px) {
-    .green-shadow {
-        top: 200px;
-    }
-}
 
-@media (max-height: 775px) {
+@media screen and (min-width: 875px) and (max-height: 900px) {
     .green-shadow {
-        top: 0;
+        height: 550px;
+        right: -350px;
+        top: 50px;
+    }
+    .purple-shadow {
+        height: 570px;
+        top: 50px;
+    }
+
+    .introduction-section {
+        padding-bottom: 5%;
     }
 }

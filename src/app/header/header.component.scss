@@ -1,5 +1,5 @@
 .header {
-    position:fixed;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -10,8 +10,9 @@
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 18px;
+    font-size: 20px;
     z-index: 11111;
+
     a {
         color: white;
         text-decoration: none;
@@ -21,11 +22,13 @@
 .header-selection {
     a {
         margin-left: 28px;
+
         &:hover {
             cursor: pointer;
             color: rgb(28, 218, 230);
         }
     }
+
     @media (max-width: 650px) {
         display: none;
     }
@@ -34,6 +37,7 @@
 .header-title {
     font-size: 40px;
     font-weight: bold;
+
     &:hover {
         cursor: pointer;
     }
@@ -56,8 +60,14 @@
 
 .menu-img {
     display: none;
+
     @media (max-width: 650px) {
-        display:block;
+        display: block;
         cursor: pointer;
     }
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }

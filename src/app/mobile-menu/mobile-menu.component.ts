@@ -13,6 +13,10 @@ export class MobileMenuComponent {
   }
 
   toLocation(location: any) {
+    if(document.body.style.overflow == 'hidden') {
+      document.body.style.overflow = 'unset';
+    }
+    
     this.appComponent.mobileMenu = false;
     if(this.appComponent.imprint == true) {
       this.appComponent.imprint = false;

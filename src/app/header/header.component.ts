@@ -33,6 +33,9 @@ export class HeaderComponent {
   }
 
   toLocation(location: any) {
+    if(document.body.style.overflow == 'hidden') {
+      document.body.style.overflow = 'unset';
+    }
     if (this.appComponent.imprint == true) {
       this.appComponent.imprint = false;
       this.appComponent.mainPage = true;
@@ -64,13 +67,16 @@ export class HeaderComponent {
   openMenu() {
     if (this.appComponent.mobileMenu != true) {
       this.appComponent.mobileMenu = true;
-      this.appComponent.mainPage = false;
+      document.body.style.height = '100%';
+      document.body.style.overflow = 'hidden';
     } else {
       if(this.appComponent.imprint == true) {
         this.appComponent.imprint = false;
       }
       this.appComponent.mobileMenu = false;
       this.appComponent.mainPage = true;
+      document.body.style.height = 'auto';
+      document.body.style.overflow = 'unset';
     }
 
   }

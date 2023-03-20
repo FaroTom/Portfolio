@@ -1,11 +1,21 @@
 .imprint {
-    position: fixed;
+    position: relative;
     top: 100px;
     right: 0;
     width: 90%;
     height: 88%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 8%;
+    padding-bottom: 2%;
     overflow: scroll;
+}
+
+.back-icon {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

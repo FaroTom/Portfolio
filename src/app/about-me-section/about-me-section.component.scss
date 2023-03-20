@@ -25,13 +25,13 @@
 .aboutMe-shadow {
     position: absolute;
     right: 1%;
-    bottom: -40px;;
+    bottom: -40px;
 }
 
 .aboutMe-content {
     padding-left: 5%;
-    padding-bottom: 200px;
-    max-width: 500px;
+    padding-bottom: 3%;
+    max-width: 38%;
 }
 
 .content-header {
@@ -62,9 +62,10 @@
 }
 
 .portfolio-picture {
-    width: 600px;
+    width: 640px;
     position: absolute;
     right: 7%;
+    bottom: 5%;
     z-index: 2;
 }
 
@@ -75,7 +76,7 @@
     }
 
     .portfolio-picture {
-        right: 4%;
+        right: 3%;
     }
 
     .content-header {
@@ -85,12 +86,16 @@
 
 @media (max-width: 1275px) {
     .aboutMe-shadow {
-        width: 700px;
+        width: 740px;
     }
 
     .portfolio-picture {
-        width: 514px;
-        bottom: 6%;
+        width: 580px;
+        bottom: 4%;
+    }
+
+    .graphic-area {
+        bottom: -380px;
     }
 }
 
@@ -103,7 +108,7 @@
     }
     .graphic-area {
         bottom: unset;
-        top: 360px;
+        top: 38%;
     }
     .aboutMe-content {
         z-index: 4;
@@ -117,6 +122,7 @@
         position: relative;
         height: auto;
         width: auto;
+        padding-top: 7%;
     }
 }
 

@@ -45,6 +45,21 @@
     flex-direction: column;
     color: white;
     gap: 6px;
+
+    &:hover {
+        img {
+            animation: spin-icon 0.6s;
+        }
+    }
+}
+
+@keyframes spin-icon {
+    from {
+
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .skills-headline {
