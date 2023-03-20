@@ -4,6 +4,7 @@
     background-color: rgb(20, 29, 47);
     display: flex;
     align-items: center;
+    padding-top: 7%;
 }
 
 .single-column {
@@ -94,7 +95,7 @@
     z-index: 500;
     display: flex;
     right: 0;
-    top: 17%;
+    top: 22%;
     gap: 36px;
     flex-direction: column;
 }
@@ -137,6 +138,7 @@
         flex-direction: column-reverse;
         height: 110vh;
         justify-content: center;
+        padding-top: unset;
     }
 
     .skills-headline {

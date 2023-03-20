@@ -5,12 +5,12 @@
     background-color: rgb(20, 29, 47);
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    padding-top: 2%;
 }
 
 .graphic-area {
     position: absolute;
-    bottom: -320px;
+    bottom: -28rem;
     height: 600px;
     overflow: hidden;
     width: 100%;
@@ -25,7 +25,8 @@
 .aboutMe-shadow {
     position: absolute;
     right: 1%;
-    bottom: -40px;
+    bottom: -25%;
+    z-index: 1;
 }
 
 .aboutMe-content {
@@ -57,15 +58,13 @@
 
 .place-picture {
     object-fit: cover;
-    width: 600px;
-    height: 1067px;
 }
 
 .portfolio-picture {
     width: 640px;
     position: absolute;
     right: 7%;
-    bottom: 5%;
+    bottom: -12%;
     z-index: 2;
 }
 
@@ -77,6 +76,7 @@
 
     .portfolio-picture {
         right: 3%;
+        bottom: -10%;
     }
 
     .content-header {
@@ -91,11 +91,11 @@
 
     .portfolio-picture {
         width: 580px;
-        bottom: 4%;
+        bottom: -5%;
     }
 
     .graphic-area {
-        bottom: -380px;
+        bottom: -28rem;
     }
 }
 
@@ -105,6 +105,7 @@
     }
     .aboutMe-section {
         flex-direction: column-reverse;
+        align-items: center;
     }
     .graphic-area {
         bottom: unset;
@@ -122,22 +123,37 @@
         position: relative;
         height: auto;
         width: auto;
-        padding-top: 7%;
     }
 }
 
 @media (max-width: 1050px) {
     .portfolio-picture {
-        bottom: 11%;
+        bottom: 4%;
     }
 }
 
 @media (max-width: 900px) {
     .portfolio-picture {
-        width: 460px;
+        width: 500px;
         height: auto;
         right: 12%;
-        bottom: 16%;
+        bottom: 4%;
+    }
+}
+
+@media (max-width: 750px) {
+    .aboutMe-section {
+        overflow: hidden;
+    }
+    .portfolio-picture {
+        width: 440px;
+        bottom: 8%;
+    }
+    .aboutMe-shadow {
+        width: 670px;
+    }
+    .graphic-area {
+        top: 34%;
     }
 }
 
@@ -150,7 +166,7 @@
     }
     .graphic-area {
         height: 400px;
-        top: 420px;
+        top: 39%;
     }
     .content-text {
         font-size: 14px;
@@ -165,13 +181,16 @@
     .portfolio-picture {
         bottom: 8%;
     }
+    .aboutMe-content {
+        padding-bottom: 5%;
+    }
 }
 
 @media (max-width: 550px) {
     .portfolio-picture {
         width: 400px;
         right: 15%;
-        bottom: 15%;
+        bottom: 7%;
     }
 }
 
@@ -179,12 +198,24 @@
     .content-header {
         font-size: 46px;
     }
+    .graphic-area {
+        top: 35%;
+    }
     .portfolio-picture {
         width: 370px;
         right: 17%;
-        bottom: 10%;
+        bottom: 5%;
     }
     .aboutMe-shadow {
         width: 580px;
+    }
+    .aboutMe-section {
+        padding-top:0;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio-picture {
+        bottom: -2%;
     }
 }
